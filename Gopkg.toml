@@ -32,3 +32,9 @@
 [prune]
   go-tests = true
   unused-packages = true
+
+[metadata.heroku]
+  root-package = "github.com/mom0tomo/erai-bot"
+  go-version = "go1.9.1"
+  install = [ ".", "./cmd/..." ]
+  ensure = "true"
