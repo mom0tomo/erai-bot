@@ -8,6 +8,12 @@
   version = "v1.2.0"
 
 [[projects]]
+  name = "github.com/joho/godotenv"
+  packages = ["."]
+  revision = "a79fa1e548e2c689c241d10173efd51e5d689d5b"
+  version = "v1.2.0"
+
+[[projects]]
   name = "github.com/nlopes/slack"
   packages = ["."]
   revision = "8ab4d0b364ef1e9af5d102531da20d5ec902b6c4"
@@ -16,6 +22,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "78b84bf78cfa23cc04bc91f0745dbc7d5d7115e8f6430e9594c5b16d268e3294"
+  inputs-digest = "9674c4e01430f65c88459d2df2d62646db386fb36b8bb5ca51d34e3bd8f48b61"
   solver-name = "gps-cdcl"
   solver-version = 1

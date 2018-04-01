@@ -2,11 +2,23 @@ package main
 
 import (
 	"github.com/nlopes/slack"
+    "os"
+    "github.com/joho/godotenv"
+    "log"
 )
 
+func Env_load() {
+    err := godotenv.Load()
+    if err != nil {
+        log.Fatal("Error loading .env file")
+    }
+}
+
 func main() {
+    Env_load()
+
     // API Clientを作成する
-	api := slack.New("xoxb-339378183618-QNreONaUdLVhQtMzLPyItNHK")
+	api := slack.New(os.Getenv("BOT_USER_TOKEN"))
 
     // WebSocketでSlack RTM APIに接続する
 	rtm := api.NewRTM()
