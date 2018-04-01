@@ -1,0 +1,1 @@
+main: erai-bot
